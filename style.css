@@ -286,79 +286,132 @@ ul {
     border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
-/* Background Section */
-.bg-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+/* Glassmorphism Timeline */
+.glass-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.bg-col h3 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.glass-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 215, 0, 0.2);
 }
 
-.bg-col h3 i {
-    color: var(--primary-accent);
+.glass-timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 100px;
 }
 
-.timeline-item {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+.glass-timeline-item:last-child {
+    margin-bottom: 0;
 }
 
-.tl-icon {
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary-accent);
+.glass-timeline-dot {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    background: #040714;
+    border: 2px solid var(--primary-accent);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: var(--primary-accent);
     font-size: 1.2rem;
-    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    z-index: 2;
 }
 
-.tl-content h4 {
-    font-size: 1.2rem;
+.glass-timeline-content {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.glass-timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent rgba(255, 255, 255, 0.03) transparent transparent;
+}
+
+.glass-timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.glass-date {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.1);
+    color: var(--primary-accent);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.glass-timeline-content h3 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
     margin-bottom: 0.3rem;
 }
 
-.tl-content .org {
+.glass-timeline-content h4 {
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
 }
 
-.tl-content .date {
-    color: var(--primary-accent);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.tl-content ul {
+.glass-timeline-content ul {
     list-style: none;
 }
 
-.tl-content ul li {
-    font-size: 0.9rem;
+.glass-timeline-content ul li {
+    font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     position: relative;
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
+    line-height: 1.6;
 }
 
-.tl-content ul li::before {
-    content: '→';
+.glass-timeline-content ul li::before {
+    content: '\f105';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     position: absolute;
     left: 0;
     color: var(--primary-accent);
+}
+
+.edu-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
 }
 
 /* Projects Section */
@@ -634,9 +687,6 @@ footer {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .bg-grid {
-        grid-template-columns: 1fr;
-    }
     .project-item {
         grid-template-columns: 1fr;
     }
@@ -659,6 +709,24 @@ footer {
     }
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    .glass-timeline::before {
+        left: 20px;
+    }
+    .glass-timeline-item {
+        padding-left: 60px;
+    }
+    .glass-timeline-dot {
+        left: 0;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+    .glass-timeline-content {
+        padding: 1.5rem;
+    }
+    .glass-timeline-content::before {
+        display: none;
     }
     .nav-links {
         display: none;
