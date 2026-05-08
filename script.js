@@ -41,11 +41,11 @@ navItems.forEach(item => {
 });
 
 // Scroll Reveal Animations
-const revealElements = document.querySelectorAll('.section-title, .glass-panel, .edu-card');
+const revealElements = document.querySelectorAll('.reveal');
 
 const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
-    const revealPoint = 150;
+    const revealPoint = 100;
 
     revealElements.forEach(el => {
         const revealTop = el.getBoundingClientRect().top;
@@ -54,11 +54,6 @@ const revealOnScroll = () => {
         }
     });
 };
-
-// Initial state for reveal elements
-revealElements.forEach(el => {
-    el.classList.add('reveal');
-});
 
 // Trigger once on load, then on scroll
 window.addEventListener('load', revealOnScroll);
@@ -82,12 +77,9 @@ const projectImage = document.getElementById('superstore-img');
 if (projectTabs && projectImage) {
     projectTabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            // Remove active class from all tabs
             projectTabs.forEach(t => t.classList.remove('active'));
-            // Add active class to clicked tab
             tab.classList.add('active');
             
-            // Change image source with a fade effect
             projectImage.style.opacity = '0';
             setTimeout(() => {
                 projectImage.src = tab.getAttribute('data-img');
