@@ -9,23 +9,23 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="logo"><span>AR</span>Data</a>
+            <a href="#hero" class="logo">AR <span>DATA ANALYST</span></a>
             <ul class="nav-links">
                 <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#cv" class="nav-link">CV</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -37,106 +37,66 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <h2 class="greeting">Hello, I'm</h2>
-            <h1 class="name">Ahmed Ramadan</h1>
+            <h1 class="name">Ahmed<br>Ramadan</h1>
             <h3 class="title">Data Analyst & BI Specialist</h3>
             <p class="tagline">Transforming complex datasets into interactive dashboards and data-driven decisions.</p>
             <div class="hero-buttons">
-                <a href="#experience" class="btn btn-primary">View My Work</a>
+                <a href="#projects" class="btn btn-primary">My Portfolio</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
-        <div class="hero-graphics">
-            <!-- Decorative elements for glassmorphism/futuristic feel -->
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="profile-img-container">
-                <img src="PROFILE.jpg" alt="Ahmed Ramadan" class="profile-img">
-            </div>
-            <div class="glass-card decorative-card">
-                <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
-                <div class="card-text">
-                    <h4>Data Driven</h4>
-                    <p>Insights & Analytics</p>
-                </div>
-            </div>
+        <div class="hero-graphics reveal">
+            <div class="hero-img-bg"></div>
+            <img src="PROFILE.jpg" alt="Ahmed Ramadan" class="profile-img">
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text glass-panel">
-                    <p>I am a <strong>Business Intelligence Specialist and Data Analyst</strong> with hands-on experience in reporting, dashboard development, and technical training.</p>
-                    <p>I am highly skilled in designing KPI dashboards, optimizing data models, and delivering advanced analytics solutions. My core expertise lies in using <strong>Power BI, SQL, and Python</strong> to perform exploratory data analysis (EDA) and develop interactive dashboards that support business performance tracking and data-driven decision-making.</p>
-                    <div class="highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Interactive Dashboards</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-database"></i>
-                            <span>Data Modeling</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-search"></i>
-                            <span>EDA</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-box glass-panel">
-                        <h3>Power BI</h3>
-                        <p>DAX & Modeling</p>
-                    </div>
-                    <div class="stat-box glass-panel">
-                        <h3>Python & SQL</h3>
-                        <p>Data Extraction</p>
-                    </div>
-                    <div class="stat-box glass-panel">
-                        <h3>Team Leader</h3>
-                        <p>Technical Support</p>
-                    </div>
-                </div>
+        <div class="container reveal">
+            <div class="about-content">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="about-text">
+                    I am a <strong>Business Intelligence Specialist</strong> and <strong>Data Analyst</strong> with hands-on experience in reporting, dashboard development, and technical training. I am highly skilled in designing KPI dashboards, optimizing data models, and delivering advanced analytics solutions. My core expertise lies in using <strong>Power BI, SQL, and Python</strong> to perform exploratory data analysis (EDA) and develop interactive dashboards that support business performance tracking and data-driven decision-making.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+        <div class="container reveal">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
             <div class="skills-grid">
-                <div class="skill-category glass-panel">
-                    <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                <div class="skill-col">
+                    <h3>Programming</h3>
                     <div class="skill-tags">
-                        <span class="tag">SQL</span>
-                        <span class="tag">Python</span>
+                        <span class="tag"><i class="fas fa-database" style="margin-right: 8px;"></i>SQL</span>
+                        <span class="tag"><i class="fab fa-python" style="margin-right: 8px;"></i>Python</span>
                     </div>
                 </div>
-                
-                <div class="skill-category glass-panel">
-                    <h3><i class="fas fa-tools"></i> Data Analytic Tools</h3>
+                <div class="skill-col">
+                    <h3>Visualization</h3>
                     <div class="skill-tags">
-                        <span class="tag">Power BI (Modeling - DAX)</span>
-                        <span class="tag">Tableau</span>
-                        <span class="tag">Microsoft Excel</span>
+                        <span class="tag"><i class="fas fa-chart-bar" style="margin-right: 8px;"></i>Power BI</span>
+                        <span class="tag"><i class="fas fa-chart-pie" style="margin-right: 8px;"></i>Tableau</span>
                     </div>
                 </div>
-
-                <div class="skill-category glass-panel">
-                    <h3><i class="fas fa-brain"></i> Data Analytic Methods</h3>
+                <div class="skill-col">
+                    <h3>Tools</h3>
                     <div class="skill-tags">
-                        <span class="tag">EDA</span>
-                        <span class="tag">Data Modeling</span>
-                        <span class="tag">Analytics & Reporting</span>
-                        <span class="tag">Data Warehousing</span>
-                        <span class="tag">Sales Analytics</span>
-                        <span class="tag">Business Analysis</span>
-                        <span class="tag">Statistics</span>
+                        <span class="tag"><i class="fas fa-file-excel" style="margin-right: 8px;"></i>Microsoft Excel</span>
+                        <span class="tag"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>DAX / Data Modeling</span>
+                    </div>
+                </div>
+                <div class="skill-col">
+                    <h3>Methods</h3>
+                    <div class="skill-tags">
+                        <span class="tag"><i class="fas fa-search" style="margin-right: 8px;"></i>EDA</span>
+                        <span class="tag"><i class="fas fa-briefcase" style="margin-right: 8px;"></i>Business Analysis</span>
+                        <span class="tag"><i class="fas fa-chart-line" style="margin-right: 8px;"></i>Statistics</span>
                     </div>
                 </div>
             </div>
@@ -145,32 +105,63 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item glass-panel">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Ongoing</div>
-                    <h3 class="timeline-title">Workforce Analyst <span style="display: block; font-size: 1.1rem; color: var(--text-secondary); margin-top: 0.3rem;">Workforce Analytics</span></h3>
-                    <ul class="timeline-details">
-                        <li>Created interactive dashboards to track and analyze KPIs across business units</li>
-                        <li>Managed workforce planning, shift schedules, weekend coverage, and break rotations</li>
-                        <li>Monitored employee performance, attendance, working hours, and overtime metrics</li>
-                    </ul>
-                </div>
+        <div class="container reveal">
+            <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+            <div class="bg-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <div class="bg-col">
+                    
+                    <div class="timeline-item">
+                        <div class="tl-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="tl-content">
+                            <h4>Workforce Analyst</h4>
+                            <div class="org">Workforce Analytics</div>
+                            <div class="date">Ongoing</div>
+                            <ul>
+                                <li>Created interactive dashboards to track and analyze KPIs across business units.</li>
+                                <li>Managed workforce planning, shift schedules, weekend coverage, and break rotations.</li>
+                                <li>Monitored employee performance, attendance, working hours, and overtime metrics.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="timeline-item glass-panel">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">May 2022 – Mar 2023</div>
-                    <h3 class="timeline-title">Technical Support Team Leader <span style="display: block; font-size: 1.1rem; color: var(--text-secondary); margin-top: 0.3rem;">Telecom Company</span></h3>
-                    <ul class="timeline-details">
-                        <li>Led a team of 19 customer service agents to deliver high-quality technical support</li>
-                        <li>Handled DSL internet issues, including troubleshooting connectivity and performance problems</li>
-                        <li>Created interactive dashboards to track and analyze KPIs across company branches</li>
-                        <li>Monitored team performance and ensured service level targets were consistently met</li>
-                        <li>Designed reports to meet regional managers' needs and support data-driven decisions</li>
-                        <li>Provided coaching and training to team members on technical and communication skills</li>
-                    </ul>
+                    <div class="timeline-item">
+                        <div class="tl-icon"><i class="fas fa-headset"></i></div>
+                        <div class="tl-content">
+                            <h4>Tech Support Team Leader</h4>
+                            <div class="org">Telecom Company</div>
+                            <div class="date">May 2022 – Mar 2023</div>
+                            <ul>
+                                <li>Led a team of 19 customer service agents to deliver high-quality technical support.</li>
+                                <li>Handled DSL internet issues, including troubleshooting connectivity and performance problems.</li>
+                                <li>Created interactive dashboards to track and analyze KPIs across company branches.</li>
+                                <li>Monitored team performance and ensured service level targets were consistently met.</li>
+                                <li>Designed reports to meet regional managers' needs and support data-driven decisions.</li>
+                                <li>Provided coaching and training to team members on technical and communication skills.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section" style="background: #0a0e20;">
+        <div class="container reveal">
+            <h2 class="section-title">My <span class="highlight">Education</span></h2>
+            <div class="bg-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <div class="bg-col">
+                    <div class="timeline-item">
+                        <div class="tl-icon"><i class="fas fa-university"></i></div>
+                        <div class="tl-content">
+                            <h4>Mechanical Engineering</h4>
+                            <div class="org">Faculty of Engineering</div>
+                            <div class="date">2023 – 2027</div>
+                            <ul>
+                                <li>Industrial & Production Engineering.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,22 +169,21 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="superstore-card">
-                    <div class="superstore-header">
-                        <div class="superstore-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
+        <div class="container reveal">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="superstore-card" style="background: #0a0e20; border-radius: 20px; padding: 3rem;">
+                    <div class="superstore-header" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+                        <div class="project-number" style="margin-bottom: 0;">01</div>
                         <div class="superstore-title-area">
-                            <h3>SuperStore Sales Dashboard</h3>
-                            <p class="superstore-subtitle">Power BI Dashboard • Data Analysis</p>
+                            <h3 class="project-title" style="margin-bottom: 0.2rem;">SuperStore Sales Dashboard</h3>
+                            <p class="project-subtitle" style="margin-bottom: 0;">Power BI Dashboard • Data Analysis</p>
                         </div>
                     </div>
                     
-                    <p class="superstore-desc">
+                    <p class="project-desc" style="margin: 1.5rem 0 2.5rem 0;">
                         An interactive Power BI dashboard built to analyze the SuperStore dataset — a global retail store's sales data spanning multiple years, categories, and regions. The project involved full end-to-end analysis: data cleaning, building a star-schema data model, and creating multi-page dashboards with actionable KPIs.
                     </p>
 
@@ -238,34 +228,16 @@
                         </div>
                         <div class="tools-techniques">
                             <h4>Tools & Techniques</h4>
-                            <div class="tt-tags">
-                                <span class="tt-tag">Power BI</span>
-                                <span class="tt-tag">DAX</span>
-                                <span class="tt-tag">Star Schema</span>
-                                <span class="tt-tag">Data Modeling</span>
-                                <span class="tt-tag">KPI Cards</span>
-                                <span class="tt-tag">Data Cleaning</span>
+                            <div class="project-tags">
+                                <span class="p-tag">Power BI</span>
+                                <span class="p-tag">DAX</span>
+                                <span class="p-tag">Star Schema</span>
+                                <span class="p-tag">Data Modeling</span>
+                                <span class="p-tag">KPI Cards</span>
+                                <span class="p-tag">Data Cleaning</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-card glass-panel">
-                <div class="edu-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="edu-details">
-                    <h3>Mechanical Engineering (Industrial & Production)</h3>
-                    <h4 class="university">Faculty of Engineering</h4>
-                    <p class="edu-date">2023 – 2027</p>
                 </div>
             </div>
         </div>
@@ -273,9 +245,9 @@
 
     <!-- CV Section -->
     <section id="cv" class="cv section">
-        <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <div class="cv-content glass-panel" style="text-align: center; padding: 3rem; max-width: 600px; margin: 0 auto;">
+        <div class="container reveal">
+            <div class="contact-wrap">
+                <h2 class="section-title">Curriculum <span class="highlight">Vitae</span></h2>
                 <i class="fas fa-file-pdf" style="font-size: 4rem; color: var(--primary-accent); margin-bottom: 1.5rem;"></i>
                 <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">My Resume</h3>
                 <p style="color: var(--text-secondary); margin-bottom: 2rem;">Want to know more about my experience and skills? You can view or download my complete CV below.</p>
@@ -285,47 +257,68 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Interested in working together or have a question? Feel free to reach out.</p>
-            
-            <div class="contact-grid">
-                <a href="mailto:Ahmed01121064395@gmail.com" class="contact-card glass-panel">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>Ahmed01121064395@gmail.com</p>
-                </a>
+    <section id="contact" class="contact section" style="background: #0a0e20;">
+        <div class="container reveal">
+            <div class="contact-wrap">
+                <h2>Let's <span class="highlight">Connect</span></h2>
+                <p>Interested in working together or have a question? Feel free to reach out.</p>
                 
-                <div class="contact-card glass-panel">
-                    <i class="fas fa-phone-alt"></i>
-                    <h3>Phone</h3>
-                    <p>01020090717</p>
-                    <p>01129975985</p>
-                </div>
-                
-                <a href="https://wa.me/201020090717" target="_blank" class="contact-card glass-panel">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>01020090717</p>
-                </a>
-                
-                <a href="https://t.me/Ahmmo2" target="_blank" class="contact-card glass-panel">
-                    <i class="fab fa-telegram-plane"></i>
-                    <h3>Telegram</h3>
-                    <p>@Ahmmo2</p>
-                </a>
+                <div class="contact-grid">
+                    <a href="mailto:Ahmed01121064395@gmail.com" class="contact-box">
+                        <div class="cb-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="cb-info">
+                            <h3>Email</h3>
+                            <p>Ahmed01121064395@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-box">
+                        <div class="cb-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="cb-info">
+                            <h3>Phone</h3>
+                            <p>01020090717 <br> 01129975985</p>
+                        </div>
+                    </div>
 
-                <a href="https://www.linkedin.com/in/ahmed-ramadan-907a63399?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="contact-card glass-panel">
-                    <i class="fab fa-linkedin-in"></i>
-                    <h3>LinkedIn</h3>
-                    <p>Ahmed Ramadan</p>
-                </a>
+                    <a href="https://wa.me/201020090717" target="_blank" class="contact-box">
+                        <div class="cb-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="cb-info">
+                            <h3>WhatsApp</h3>
+                            <p>01020090717</p>
+                        </div>
+                    </a>
 
-                <div class="contact-card glass-panel">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Fayoum, Egypt</p>
+                    <a href="https://t.me/Ahmmo2" target="_blank" class="contact-box">
+                        <div class="cb-icon"><i class="fab fa-telegram-plane"></i></div>
+                        <div class="cb-info">
+                            <h3>Telegram</h3>
+                            <p>@Ahmmo2</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ahmed-ramadan-907a63399?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="contact-box">
+                        <div class="cb-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="cb-info">
+                            <h3>LinkedIn</h3>
+                            <p>Ahmed Ramadan</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.upwork.com/freelancers/~0190f9d2ca8bf9f638?mp_source=share" target="_blank" class="contact-box">
+                        <div class="cb-icon"><i class="fa-brands fa-upwork"></i></div>
+                        <div class="cb-info">
+                            <h3>Upwork</h3>
+                            <p>Ahmed Ramadan</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-box">
+                        <div class="cb-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="cb-info">
+                            <h3>Location</h3>
+                            <p>Fayoum, Egypt</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -333,9 +326,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Ahmed Ramadan. Data Analyst Portfolio.</p>
-        </div>
+        <p>&copy; 2026 Ahmed Ramadan. Data Analyst Portfolio.</p>
     </footer>
 
     <script src="script.js"></script>
